@@ -1,0 +1,10 @@
+sources:
+  - name: airbnb                      # identifier of the source
+    schema: raw                       # schema containing the raw tables
+    tables:
+      - name: listings
+        identifier: raw_listings      # abstract of the raw table name so that we don't have to update queries later if name of raw table changes
+      - name: hosts
+        identifier: raw_hosts
+      - name: reviews
+        identifier: raw_reviews
